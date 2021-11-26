@@ -21,5 +21,5 @@ sum_total = ((num_potatoes * potato)+ (num_broccolis * broccoli) + (num_brussel_
 
 discount_percentage = (30)
 
-discounted_sum_total = (sum_total - (sum_total * 30 / 100))
+discounted_sum_total = (sum_total - (sum_total * discount_percentage / 100))
 print(discounted_sum_total)
