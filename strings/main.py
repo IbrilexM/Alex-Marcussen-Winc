@@ -44,5 +44,5 @@ print(name_short)
 chant = ((len(first_name)) * (first_name + '! '))[:-1]
 
 # zeker weten dat de laatste karakter geen spatie is
-print(len(chant))
-good_chant = (chant[22:] != ' ')
+good_chant = (chant[len(chant):] != ' ')
+print(good_chant)
