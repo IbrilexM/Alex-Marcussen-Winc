@@ -25,22 +25,20 @@ print(report)
 # Volledige naam van speler
 player = 'Ruud Gullit'
 
-# Begin en einde van voornaam
-print(player.find('Ruud'))
-print(player.find('d'))
+# Vinden van de spatie
+space = player.find(' ')
+print(space)
 
-first_name = player[:4]
-
-
-# Lengte achternaam
-print(player.find('Gullit'))
-print(len(player))
+# De voornaam losmaken van achternaam
+first_name = player[:space]
+print(first_name)
 
 # Achternaam los maken van voornaam
-last_name_len = (len(player[5:11]))
-
+last_name_len = (len(player[space + 1:]))
+print(last_name_len)
 # voorletter + achternaam
-name_short = player[:1] + '.' + player[4:]
+name_short = first_name[:1] + '.' + player[space:]
+print(name_short)
 
 # juigen voornaam speler keer het aantal letter van speler (4x)
 chant = ((len(first_name)) * (first_name + '! '))[:-1]
